@@ -25,10 +25,14 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env.local
-.env.development.local
+
+.env*
 .env.test.local
 .env.production.local
+*.production
+*.local
+.env.local
+
 
 # vercel
 .vercel
@@ -37,3 +41,5 @@ yarn-error.log*
 *.tsbuildinfo
 
 .idea/
+!/.env.production
+!/.env.local
